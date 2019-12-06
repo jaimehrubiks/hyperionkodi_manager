@@ -1,0 +1,24 @@
+[Unit]
+Description = PineGrove
+
+# if you don't need the MySQL DB backend, this should be sufficient
+After = systemd-user-sessions.service network.target sound.target
+
+# if you need the MySQL DB backend, use this block instead of the previous
+# After = systemd-user-sessions.service network.target sound.target mysql.service
+# Wants = mysql.service
+
+[Service]
+#User = kodi
+#Group = kodi
+User=root
+Group=root
+WorkingDirectory=/home/pi/fucknandos
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Type = simple
+ExecStart = /usr/bin/python main.py
+Restart = always
+RestartSec = 15
+
+[Install]
+WantedBy = multi-user.target

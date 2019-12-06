@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="CJ Patoilo">
+		<meta name="description" content="Pine Grove Tools">
+		<title>FuckNando's Web</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"> -->
+        <link rel="stylesheet" href="/static/css/milligram.css">
+		<link rel="stylesheet" href="/static/css/style.css">
+	</head>
+	<body>
+
+		<main class="wrapper">
+
+			<nav class="navigation">
+				<section class="container">
+					<a class="navigation-title" href="https://milligram.github.io/">
+<h1 class="title">FuckNando's Management Page</h1>
+					</a>
+				</section>
+			</nav>
+
+			<section class="container" id="examples">
+				<h5 class="title">Raspberry PI</h5>
+                <button id='rpi_reboot'>Reboot</button><button id='rpi_poweroff'>Poweroff</button>
+			</section>
+
+			<section class="container" id="examples">
+				<h5 class="title">Kodi</h5>
+                <button id='kodi_start'>Start</button><button id='kodi_restart'>Try-restart</button><button id='kodi_stop'>Stop</button>
+			</section>
+
+			<section class="container" id="examples">
+				<h5 class="title">Hyperion</h5>
+				<button id='hyperion_start'>Start</button><button id='hyperion_restart'>Try-restart</button><button id='hyperion_stop'>Stop</button>
+				<br>
+				<button id='hyperion_interactive'>Movie Mode</button>
+				Pick a Color: 
+				<input class="jscolor colorinput" onchange="update(this.jscolor)" value="Pick a Color" style="background-color: #9b4dca;">
+
+				<!-- <button id="hyperion_manual"></button> -->
+			</section>
+
+
+
+            <!-- <section class="container">
+            <br>
+            <img src="http://statics.memondo.com/p/s1/mmds/2016/10/MMD_918209_e30e85d579a54328938af99367f92e58_motor_hoy_se_cumple_una_decada_desde_que_alonso_hizo_historia_con_su_bicambeonato_thumb_fb.jpg?cb=3331131" width="400px">
+            </section> -->
+            
+
+		</main>
+
+			<script src="/static/js/jscolor.js"></script>
+			<script src="/static/js/script.js"></script>
+
+	</body>
+</html>
